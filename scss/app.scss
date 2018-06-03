@@ -1,6 +1,8 @@
-@import 'common.scss';
+@import 'variables.scss';
+@import 'commons.scss';
 
 // Import partials
 @import '_header.scss';
 @import '_mediaqueries.scss';
 @import '_loop.scss';
+@import '_footer.scss';

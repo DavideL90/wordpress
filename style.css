@@ -151,6 +151,11 @@ header .menu-nav-bar-container #menu-nav-bar li a:hover {
   header .menu-nav-bar-container #menu-nav-bar li a {
     font-size: 18px;
   }
+
+  footer #footer-sidebar .widget {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .article_cnt {
@@ -170,5 +175,41 @@ header .menu-nav-bar-container #menu-nav-bar li a:hover {
 
 .article_cnt .img_article {
   max-width: 400px;
+}
+
+footer {
+  background-color: #5e5e5e;
+}
+
+footer #footer-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer #footer-sidebar .widget {
+  list-style: none;
+  padding: 20px 50px;
+}
+
+footer #footer-sidebar .widget .widgettitle {
+  color: lightgrey;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+footer #footer-sidebar .widget ul {
+  list-style: none;
+}
+
+footer #footer-sidebar .widget ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer #footer-sidebar .widget ul li a:hover {
+  color: #ffff66;
 }
 

@@ -1,0 +1,57 @@
+header{
+   height: 800px;
+
+   #parallax{
+      height: calc(100% - 80px);
+      background-image: url('/eswordpress/wordpress/wp-content/themes/mytheme/img/wallpaper1.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+
+      .overlay{
+         height: 100%;
+         display: flex;
+         background-color: rgba(0, 0, 0, 0.2);
+
+         #blog-title{
+            font-size: 100px;
+            color: #ffb733;
+            display: flex;
+            margin: auto 20px;
+            font-family: 'Berkshire Swash', cursive;
+            letter-spacing: 10px;
+         }
+      }
+   }
+
+   .menu-nav-bar-container{
+      height: 80px;
+      background-color: #5e5e5e;
+      position: sticky;
+      top: 0;
+
+      #menu-nav-bar{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+
+         li{
+            list-style: none;
+            margin: 0 50px;
+
+            a{
+               text-decoration: none;
+               color: white;
+               font-size: 30px;
+               font-family: 'Oxygen Mono', monospace;
+
+               &:hover{
+                  color: #ffff66;
+               }
+            }
+         }
+      }
+   }
+}

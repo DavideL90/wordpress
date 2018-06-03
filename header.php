@@ -8,11 +8,16 @@
    </head>
    <body <?php body_class(); ?> >
       <header>
+         <div id="parallax">
+            <div class="overlay">
+               <h1 id="blog-title">My awesome blog</h1>
+            </div>
+         </div>
          <?php
             wp_nav_menu(array(
                   'theme_location' => 'header',
                   'depth' => 2,
-                  'container' => false,
+                  'container' => 'div',
                   'menu_class' => 'nav_items'
             ));
          ?>

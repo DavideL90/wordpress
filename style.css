@@ -1,14 +1,174 @@
-/*
-Theme Name: My theme
-Theme URI: https://www.mytheme.it
-Author: Davide
-Author URI: https://wordpress.org/
-Description: Tema di prova
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: mytheme
-Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 800px;
+}
+
+header #parallax {
+  height: calc(100% - 80px);
+  background-image: url("/eswordpress/wordpress/wp-content/themes/mytheme/img/wallpaper1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header #parallax .overlay {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+header #parallax .overlay #blog-title {
+  font-size: 100px;
+  color: #ffb733;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 20px;
+  font-family: 'Berkshire Swash', cursive;
+  letter-spacing: 10px;
+}
+
+header .menu-nav-bar-container {
+  height: 80px;
+  background-color: #5e5e5e;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+header .menu-nav-bar-container #menu-nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header .menu-nav-bar-container #menu-nav-bar li {
+  list-style: none;
+  margin: 0 50px;
+}
+
+header .menu-nav-bar-container #menu-nav-bar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-family: 'Oxygen Mono', monospace;
+}
+
+header .menu-nav-bar-container #menu-nav-bar li a:hover {
+  color: #ffff66;
+}
+
+@media all and (max-width: 1170px) {
+  header {
+    height: 700px;
+  }
+
+  header #parallax .overlay #blog-title {
+    font-size: 80px;
+  }
+
+  header .menu-nav-bar-container #menu-nav-bar li {
+    margin: 0 30px;
+  }
+
+  header .menu-nav-bar-container #menu-nav-bar li a {
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  header {
+    height: 600px;
+  }
+
+  header #parallax .overlay #blog-title {
+    font-size: 60px;
+  }
+
+  header .menu-nav-bar-container #menu-nav-bar li {
+    margin: 0 25px;
+  }
+
+  header .menu-nav-bar-container #menu-nav-bar li a {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  header {
+    height: 500px;
+  }
+
+  header #parallax .overlay #blog-title {
+    font-size: 50px;
+  }
+
+  header .menu-nav-bar-container #menu-nav-bar li {
+    margin: 0 15px;
+  }
+
+  header .menu-nav-bar-container #menu-nav-bar li a {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  header {
+    height: 400px;
+  }
+
+  header #parallax .overlay #blog-title {
+    font-size: 50px;
+  }
+
+  header .menu-nav-bar-container #menu-nav-bar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  header .menu-nav-bar-container #menu-nav-bar li {
+    text-align: center;
+    margin: 0;
+    width: 50%;
+  }
+
+  header .menu-nav-bar-container #menu-nav-bar li a {
+    font-size: 18px;
+  }
+}
+
+.article_cnt {
+  margin: 50px;
+  border-radius: 5px;
+  padding: 50px;
+  background-color: #f9f5e3;
+}
+
+.article_cnt h2 {
+  margin-bottom: 20px;
+}
+
+.article_cnt p {
+  margin-bottom: 20px;
+}
+
+.article_cnt .img_article {
+  max-width: 400px;
+}
+

@@ -28,4 +28,15 @@
       add_action('wp_enqueue_scripts', 'import_fonts');
    }
 
+   if(!function_exists('articles_sidebar')){
+      function articles_sidebar(){
+         register_sidebar( array(
+           'name'          => 'articles_sidebar',
+           'id'            => 'articles_sidebar',
+           'before_title'  => '<h1 class="sidebar-title">',
+           'after_title'   => '</h1>'
+        ));
+      }
+      add_action( 'widgets_init', 'articles_sidebar');
+   }
 ?>

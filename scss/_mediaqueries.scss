@@ -97,6 +97,18 @@
       }
    }
 
+   main{
+      .articles_cnt{
+         .singleArticle{
+            .img_cnt{
+               img{
+                  height: 190px !important;
+               }
+            }
+         }
+      }
+   }
+
    footer{
       #footer-sidebar{
          .widget{

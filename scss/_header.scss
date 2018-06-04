@@ -16,10 +16,9 @@ header{
 
          #blog-title{
             font-size: 100px;
-            color: #ffb733;
+            color: white;
             display: flex;
             margin: auto 20px;
-            font-family: 'Berkshire Swash', cursive;
             letter-spacing: 10px;
          }
       }
@@ -45,7 +44,6 @@ header{
                text-decoration: none;
                color: white;
                font-size: 30px;
-               font-family: 'Oxygen Mono', monospace;
 
                &:hover{
                   color: #ffff66;

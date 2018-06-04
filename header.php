@@ -10,7 +10,7 @@
       <header>
          <div id="parallax">
             <div class="overlay">
-               <h1 id="blog-title">My awesome blog</h1>
+               <h1 id="blog-title">My personal blog</h1>
             </div>
          </div>
          <?php
